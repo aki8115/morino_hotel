@@ -332,6 +332,7 @@ section {
 .mv img {
     height: 500px;
     margin: 0 auto;
+    width: 100%;
 
 }
 
@@ -2922,6 +2923,7 @@ cancel.html
         max-width: 320px;
         box-sizing: border-box;
     }
+
     .back-btn {
         width: 100%;
         max-width: 180px;
