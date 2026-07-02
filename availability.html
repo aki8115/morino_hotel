@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>空室状況｜温泉付き高級ホテル</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- プラグイン「slick」のcssを読み込む -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+
+    <main>
+
+        <section class="search-section">
+            <!-- <h1>空室を検索する</h1> -->
+            <h1 id="page-title">空室を検索する</h1>
+            <!-- <p class="lead">ご希望の日程・人数・お部屋タイプを選択してください。</p> -->
+            <p class="lead" id="page-lead">
+                ご希望の日程・人数・お部屋タイプを選択してください。
+            </p>
+
+            <form class="search-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkin">チェックイン</label>
+                        <input type="date" id="checkin">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkout">チェックアウト</label>
+                        <input type="date" id="checkout">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <dl>
+
+                            <dt>
+                                <label for="people">人数</label>
+                            </dt>
+                            <dd>
+
+                                <select id="people">
+                                    <option value="">選択してください</option>
+                                    <option>1名</option>
+                                    <option>2名</option>
+                                    <option>3名</option>
+                                    <option>4名</option>
+                                </select>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="form-group">
+                        <dl>
+                            <dt>
+                                <label for="room">お部屋タイプ</label>
+                            </dt>
+                            <dd>
+
+                                <select id="room">
+                                    <option value="">選択してください</option>
+                                    <option>和洋室</option>
+                                    <option>スイートルーム</option>
+                                    <option>露天風呂付き客室</option>
+                                </select>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- <button type="submit" class="search-btn">空席を確認する</button> -->
+                <button type="submit" class="search-btn" id="submit-btn">
+                    空室を確認する
+                </button>
+            </form>
+
+            <div class="back-link">
+                <a href="index.html">トップページへ戻る</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- <script src="availability.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slickを使うのに必要なjsファイル -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

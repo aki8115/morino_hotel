@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>マイページ｜もりの</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- プラグイン「slick」のcssを読み込む -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="mypage">
+
+        <div class="mypage-inner">
+
+            <div class="mypage-head">
+                <img src="img/logo.png" alt="もりの" class="mypage-logo">
+
+                <h1>MY PAGE</h1>
+                <p>予約状況の確認・キャンセルができます。</p>
+            </div>
+
+            <section class="user-box">
+                <p class="user-name">山田 太郎 様</p>
+                <a href="login.html" class="logout-btn">ログアウト</a>
+            </section>
+
+            <section class="reservation-section">
+
+                <h2>現在のご予約</h2>
+
+                <div class="reservation-card">
+
+                    <div class="reservation-status">
+                        <span>予約済み</span>
+                    </div>
+
+                    <dl class="reservation-list">
+                        <div>
+                            <dt>予約番号</dt>
+                            <dd>MRN-80</dd>
+                        </div>
+
+                        <div>
+                            <dt>宿泊日</dt>
+                            <dd>2026年6月24日～2026年6月29日</dd>
+                        </div>
+
+                        <div>
+                            <dt>人数</dt>
+                            <dd>2名</dd>
+                        </div>
+
+                        <div>
+                            <dt>お部屋</dt>
+                            <dd>
+                                露天風呂付き客室</dd>
+                        </div>
+
+                        <div>
+                            <dt>料金</dt>
+                            <dd>90,000円</dd>
+                        </div>
+                    </dl>
+
+                    <div class="reservation-buttons">
+                        <a href="reservation-detail.html" class="detail-btn">
+                            予約詳細を見る
+                        </a>
+
+                        <a href="cancel.html" class="cancel-btn">
+                            キャンセルする
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="back-link">
+                <a href="index.html">トップページへ戻る</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- <script src="availability.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slickを使うのに必要なjsファイル -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
