@@ -1481,7 +1481,8 @@ guestrooms.html
     }
 
     .concept-item {
-        width: 400px;
+        /* width: 400px; */
+        width: 250px;
         /* border: 1px solid red; */
         position: relative;
     }
@@ -1558,7 +1559,8 @@ guestrooms.html
     }
 
     .room img {
-        width: 350px;
+        /* width: 350px; */
+        width: 300px;
         margin: 0 auto;
         height: 250px;
     }
@@ -1618,12 +1620,12 @@ guestrooms.html
 
     /* 左矢印 */
     .slick-prev {
-        left: 25%;
+        left: 5%;
     }
 
     /* 右矢印 */
     .slick-next {
-        right: 25%;
+        right: 5%;
     }
 
     /* ドット全体 */
@@ -1637,13 +1639,16 @@ guestrooms.html
 
     .qa .container {
         /* border: 1px solid blue; */
-        padding: 0 5%;
+        padding: 0 3%;
         background: none;
     }
 
     .qa-item {
         margin-bottom: 20px;
         padding: 0;
+
+        width: 90%;
+        margin: 0 auto;
     }
 
     .q,
@@ -1654,9 +1659,9 @@ guestrooms.html
 
     .qa-question,
     .qa-answer {
-        width: 64px;
+        width: 44px;
         flex-shrink: 0;
-        padding: 0 0 0 40px;
+        /* padding: 0 0 0 40px; */
         font-size: 16px;
         display: flex;
         align-items: center;
@@ -1668,12 +1673,13 @@ guestrooms.html
         width: auto;
         flex: 1;
         font-size: 12px;
-        padding: 23px 45px 23px 10px;
+        /* padding: 23px 45px 23px 10px; */
+        padding: 23px 10px 23px 0px;
         line-height: 1.8;
     }
 
     .arrow {
-        right: 40px;
+        right: 15px;
     }
 
 
@@ -1776,6 +1782,17 @@ guestrooms.html
 
     /* フッター */
 
+
+    .footer {
+        margin-top: 60px;
+    }
+
+    .footer img {
+        width: 350px;
+        height: 300px;
+    }
+
+
     .footer_list {
         /* border: 1px solid red; */
         padding: 0 2%;
@@ -1784,17 +1801,39 @@ guestrooms.html
     .footer_right .news {
         width: 260px;
         right: 28px;
+
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid;
+        text-align: left;
+        margin-top: 10px;
+        width: 300px;
     }
 
     .hotel {
-        justify-content: center;
-        gap: 20px;
+        flex-direction: column;
+        gap: 0px;
+        /* justify-content: flex-end; */
+        position: relative;
+        padding-top: 150px;
+        /* border: 1px solid blue; */
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hotel .map {
+        /* border: 1px solid red; */
+        width: 300px;
     }
 
 
     .hotel_sns {
         top: 134px;
         right: 10%;
+    }
+
+    .hotel_text {
+        margin-top: 20px;
     }
 
     .hotel_text .name {
@@ -1810,6 +1849,13 @@ guestrooms.html
     .hotel_text .address {
         line-height: 3.0;
         font-size: 12px;
+    }
+
+    .hotel_sns {
+        position: absolute;
+        top: 73.5%;
+        left: 50%;
+
     }
 
     .sns_icon img {
@@ -1841,134 +1887,14 @@ guestrooms.html
 
 }
 
-@media (max-width:400px) {
-
-    /* コンセプト */
-
-    .concept-item {
-        width: 250px;
-        /* border: 1px solid red; */
-    }
-
-
-    .room img {
-        width: 300px;
-        height: 250px;
-    }
-
-    /* 左矢印 */
-    .slick-prev {
-        left: 5%;
-    }
-
-    /* 右矢印 */
-    .slick-next {
-        right: 5%;
-    }
-
-    /* お問い合わせ */
-
-    .qa .container {
-        /* border: 1px solid blue; */
-        padding: 0 3%;
-    }
-
-    .qa-item {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .q-text,
-    .a-text {
-        padding: 23px 10px 23px 0px;
-    }
-
-    .qa-question,
-    .qa-answer {
-        width: 44px;
-        padding: 0 0 0 0px;
-    }
-
-    .arrow {
-        right: 15px;
-    }
-
-    /* フッター */
-
-    .footer {
-        margin-top: 60px;
-    }
-
-
-    .footer img {
-        width: 350px;
-        height: 300px;
-    }
-
-    .footer_right .news {
-        left: 50%;
-        transform: translateX(-50%);
-        border: 1px solid;
-        text-align: left;
-        margin-top: 10px;
-        width: 300px;
-    }
-
-    .footer_right .news .date {
-        /* padding: 20px 0 20px 30px; */
-    }
-
-    .hotel {
-        flex-direction: column;
-        gap: 0px;
-        /* justify-content: flex-end; */
-        position: relative;
-        padding-top: 150px;
-        /* border: 1px solid blue; */
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-    .hotel .map {
-        /* border: 1px solid red; */
-        width: 300px;
-    }
-
-    .hotel_text {
-        margin-top: 20px;
-    }
-
-    .hotel_sns {
-        position: absolute;
-        top: 73.5%;
-        left: 50%;
-
-    }
-
-    .sns_icon img {
-        width: 25px;
-        height: 25px;
-    }
-
-    .footer_logo {
-        /* border: 1px solid; */
-        display: inline-block;
-        margin: 20px 0 10px 0;
-    }
-
-    .footer_logo img {
-        /* height: 80px; */
-        height: auto;
-        width: 100px;
-
-    }
-
-}
-
 
 /* guestrooms.html レスポンシブ */
 
 @media (max-width:800px) {
+
+    .br-sp {
+        display: block;
+    }
 
     .breadcrumb {
         margin-top: 120px;
@@ -2011,52 +1937,6 @@ guestrooms.html
         /* border: 1px solid blue; */
     }
 
-    .slick-dotted.slick-slider {
-        margin-bottom: 0px;
-    }
-
-
-    .room-flex {
-        flex-direction: column;
-        gap: 0px;
-    }
-
-    .room-image {
-        width: 100%;
-    }
-
-    .room-image img {
-        margin: 0 auto;
-    }
-
-    .room-text {
-        line-height: 2;
-        margin-top: 0;
-        padding: 20px 0;
-        max-width: 350px;
-        margin: 0 auto;
-        /* border: 1px solid; */
-    }
-
-
-    .room-btn {
-        width: 350px;
-    }
-
-    .amenity {
-        padding: 0 5%;
-    }
-
-
-}
-
-
-@media (max-width:400px) {
-
-    .br-sp {
-        display: block;
-    }
-
     .room1 h2,
     .room2 h2,
     .room3 h2 {
@@ -2071,32 +1951,56 @@ guestrooms.html
     /*↑テキストの長さによって微調整？
     →display:inline-block; */
 
+
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0px;
+    }
+
+
+    .room-flex {
+        flex-direction: column;
+        gap: 0px;
+    }
+
     .room-image img {
         width: 280px;
         height: 200px;
         margin: 0 auto;
     }
 
-    .room-text {
-        padding: 20px;
+    .room-image img {
+        margin: 0 auto;
     }
 
+    .room-text {
+        line-height: 2;
+        margin-top: 0;
+        padding: 20px;
+        max-width: 350px;
+        margin: 0 auto;
+        /* border: 1px solid; */
+    }
+
+
     .room-btn {
-        /* width: 350px; */
         max-width: 350px;
         width: 100%;
         margin: 20px 0 auto;
     }
 
     .amenity {
+        padding: 0 5%;
         max-width: 375px;
     }
 
+    
     .amenity ul {
         padding: 0 40px;
     }
 
 }
+
 
 /* ----------------------------------------------
 availability.html
@@ -2560,7 +2464,7 @@ mypage.html
 
 /*mypage.html レスポンシブ */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
 
     .mypage {
         padding: 60px 20px;
@@ -2719,7 +2623,7 @@ reservation-detail.html
 
 /*reservation-detail.html レスポンシブ */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
 
     .detail-page {
         padding: 60px 20px;
@@ -2868,7 +2772,7 @@ cancel.html
 
 /*cancel.html レスポンシブ */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
 
     .cancel-page {
         padding: 60px 20px;
